@@ -178,6 +178,9 @@ bar {
 	}
 }
 
+# screen locker
+bindsym $mod+x exec --no-startup-id i3lock -i ~/.config/i3/wall 
+
 # Volume Controls
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +2% && pkill -RTMIN+1 i3blocks
 bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -2% && pkill -RTMIN+1 i3blocks
