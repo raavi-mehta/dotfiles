@@ -1,4 +1,7 @@
 # Dotfiles
+## General
+- install Roboto fonts for System and Terminal 
+
 ## zsh
 - install oh-my-zsh
 - install custom powerline fonts
