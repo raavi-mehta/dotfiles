@@ -1,10 +1,12 @@
 # Dotfiles
-## General
-- install Roboto fonts for System and Terminal 
+## i3 
+- install Roboto fonts
+- install i3blocks
+- make scripts in /scripts executable
 
 ## zsh
-- install oh-my-zsh
 - install custom powerline fonts
+- install oh-my-zsh
 - install agnoster zsh theme and update zshrc
 - install zsh-syntax-highlighting and update zshrc
 
