@@ -194,3 +194,6 @@ exec --no-startup-id nm-applet
 exec --no-startup-id compton --backend glx --paint-on-overlay --vsync opengl-mswc -f
 exec --no-startup-id pactl set-sink-volume 0 0 && pkill -RTMIN+1 i3blocks
 exec --no-startup-id redshift -l 51.150069:-114.245256 
+
+# remap escape and caps lock
+exec --no-startup-id xmodmap ~/.config/xmodmap/config
