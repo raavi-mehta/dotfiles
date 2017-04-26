@@ -43,10 +43,10 @@ bindsym $mod+d exec dmenu_run -fn "Roboto Medium 10"
 # bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
 
 # change focus
-bindsym $mod+j focus left
-bindsym $mod+k focus down
-bindsym $mod+l focus up
-bindsym $mod+semicolon focus right
+#bindsym $mod+j focus left
+#bindsym $mod+k focus down
+#bindsym $mod+l focus up
+#bindsym $mod+semicolon focus right
 
 # alternatively, you can use the cursor keys:
 bindsym $mod+Left focus left
@@ -179,7 +179,7 @@ bar {
 }
 
 # screen locker
-bindsym $mod+x exec --no-startup-id i3lock -i ~/.config/i3/wall 
+bindsym $mod+l exec --no-startup-id i3lock -i ~/.config/i3/wall 
 
 # Volume Controls
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +2% && pkill -RTMIN+1 i3blocks
