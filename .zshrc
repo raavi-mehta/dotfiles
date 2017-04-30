@@ -83,6 +83,7 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+alias vpn="sudo openvpn --config ~/.config/openvpn/pia-vpn.ovpn"
 
 # zsh-syntax-highlighting must be sourced at end
 source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
