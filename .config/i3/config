@@ -181,14 +181,14 @@ bar {
 # screen locker
 bindsym $mod+l exec --no-startup-id i3lock -i ~/.config/i3/wall 
 
-# Volume Controls
+# volume controls
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +2% && pkill -RTMIN+1 i3blocks
 bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -2% && pkill -RTMIN+1 i3blocks
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle && pkill -RTMIN+1 i3blocks
 
 # execute at start
-exec --no-startup-id synclient VertScrollDelta=-113
 exec_always --no-startup-id feh --bg-scale ~/.config/i3/wall
+exec --no-startup-id syndaemon -K -i 0.2 -R -d 
 exec --no-startup-id xfce4-power-manager
 exec --no-startup-id nm-applet
 exec --no-startup-id compton --backend glx --paint-on-overlay --vsync opengl-mswc -f
