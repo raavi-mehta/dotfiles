@@ -8,6 +8,7 @@ call plug#end()
 
 " true color support
 set termguicolors
+set t_Co=256
 
 " copy indent from previous line 
 set autoindent
