@@ -87,4 +87,4 @@ alias vpn="sudo openvpn --config ~/.config/openvpn/pia.ovpn"
 alias python=python3
 
 # zsh-syntax-highlighting must be sourced at end
-source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 
