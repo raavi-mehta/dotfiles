@@ -1,6 +1,10 @@
 " vim-plug
 call plug#begin('~/.vim/plugged')
 Plug 'morhetz/gruvbox'
+Plug 'pangloss/vim-javascript'
+Plug 'scrooloose/nerdtree'
+Plug 'w0rp/ale'
+Plug 'Valloric/YouCompleteMe', { 'do': './install.py --js-completer' }
 Plug 'vim-airline/vim-airline'
     let g:airline_powerline_fonts = 1
     set laststatus=2 " always show airline
@@ -15,6 +19,7 @@ set autoindent
 
 " enable syntax highlighting
 syntax enable
+let g:ale_linters = {'javascript':['jslin']}
 
 " show line number
 set number
