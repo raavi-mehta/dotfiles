@@ -1,7 +1,9 @@
 " vim-plug
 call plug#begin('~/.vim/plugged')
 Plug 'morhetz/gruvbox'
+Plug 'jiangmiao/auto-pairs'
 Plug 'pangloss/vim-javascript'
+Plug 'mxw/vim-jsx'
 Plug 'scrooloose/nerdtree'
 Plug 'w0rp/ale'
 Plug 'Valloric/YouCompleteMe', { 'do': './install.py --js-completer' }
@@ -65,6 +67,6 @@ set undodir=~/.config/vim/tmp/undo//
 " autocompletion chooses longest matching string
 set completeopt=longest,menu,preview
 
-" removes highlighted text after search
+" removes highlighted text after search with <SPACE>
 nnoremap <SPACE> <nop>
 nnoremap <silent> <SPACE> :noh<CR>
