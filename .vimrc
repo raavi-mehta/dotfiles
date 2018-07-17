@@ -6,10 +6,10 @@ Plug 'pangloss/vim-javascript'
 Plug 'mxw/vim-jsx'
 Plug 'scrooloose/nerdtree'
 Plug 'w0rp/ale'
-Plug 'Valloric/YouCompleteMe', { 'do': './install.py --js-completer' }
+Plug 'Valloric/YouCompleteMe'           " must run install.sh manually 
 Plug 'vim-airline/vim-airline'
     let g:airline_powerline_fonts = 1
-    set laststatus=2 " always show airline
+    set laststatus=2                    " always show airline
 call plug#end()
 
 " true color support
@@ -61,8 +61,8 @@ set undolevels=500
 set undoreload=500
 
 " set backup and undo directories
-set backupdir=~/.config/vim/tmp/backups//
-set undodir=~/.config/vim/tmp/undo//
+set backupdir=~/.vim/tmp/backups//
+set undodir=~/.vim/tmp/undo//
 
 " autocompletion chooses longest matching string
 set completeopt=longest,menu,preview

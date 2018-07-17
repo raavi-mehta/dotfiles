@@ -5,14 +5,17 @@
 - make scripts in `~/.config/i3/scripts` executable
 
 ## zsh
-- install custom powerline fonts
+- install patched powerline fonts (use github install.sh)
 - install `oh-my-zsh`
   - `sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"`
-  - `chsh -s /bin/zsh`
+  - `chsh -s $(which zsh)`
+  - log out / reboot
 - set zsh theme to agnoster (`ZSH_THEME="agnoster"`) in .zshrc
-- install `zsh-syntax-highlighting` and update zshrc
+- install `zsh-syntax-highlighting`
   - see output path after installation and update .zshrc if necessary
 
 ## vim
 - install `vim-plug`
-  - use `:PlugInstall` to install gruvbox theme and vim-airline
+  - use `:PlugInstall` to install plugins
+  - must run YouCompleteMe install.sh manually
+    - (~/.vim/plugged/YouCompleteMe/install.sh)
