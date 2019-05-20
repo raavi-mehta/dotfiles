@@ -17,5 +17,5 @@
 ## vim
 - install `vim-plug`
   - use `:PlugInstall` to install plugins
-  - must run YouCompleteMe install.sh manually
+  - must run YouCompleteMe install.py manually
     - (~/.vim/plugged/YouCompleteMe/install.sh)
