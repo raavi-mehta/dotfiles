@@ -5,8 +5,6 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'scrooloose/nerdtree'
 Plug 'w0rp/ale'
 Plug 'vim-airline/vim-airline'
-    let g:airline_powerline_fonts = 1
-    set laststatus=2                    " always show airline
 call plug#end()
 
 " true color support
@@ -19,6 +17,10 @@ set autoindent
 " enable syntax highlighting
 syntax enable
 let g:ale_linters = {'javascript':['jslin']}
+
+" airline configuration
+let g:airline_powerline_fonts = 1
+set laststatus=2                    " always show airline
 
 " show line number
 set number
