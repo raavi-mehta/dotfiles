@@ -20,19 +20,19 @@ gaps top 0
 gaps bottom 0
 
 # start dmenu (a program launcher)
-bindsym $mod+d exec dmenu_run -fn "Roboto Medium 10"
+bindsym $mod+q exec rofi -show run 
 
 # change focus
-bindsym $mod+j focus left
-bindsym $mod+k focus down
-bindsym $mod+l focus up
-bindsym $mod+semicolon focus right
+bindsym $mod+Left focus left
+bindsym $mod+Down focus down
+bindsym $mod+Up focus up
+bindsym $mod+Right focus right
 
 # move focused window
-bindsym $mod+Shift+j move left
-bindsym $mod+Shift+k move down
-bindsym $mod+Shift+l move up
-bindsym $mod+Shift+semicolon move right
+bindsym $mod+Shift+Left move left
+bindsym $mod+Shift+Down move down
+bindsym $mod+Shift+Up move up
+bindsym $mod+Shift+Right move right
 
 # split orientation
 bindsym $mod+h split h
@@ -95,22 +95,16 @@ mode "resize" {
         # Pressing right will grow the window’s width.
         # Pressing up will shrink the window’s height.
         # Pressing down will grow the window’s height.
-        bindsym j resize shrink width 10 px or 10 ppt
-        bindsym k resize grow height 10 px or 10 ppt
-        bindsym l resize shrink height 10 px or 10 ppt
-        bindsym semicolon resize grow width 10 px or 10 ppt
-
+        bindsym Left resize shrink width 10 px or 10 ppt
+        bindsym Down resize grow height 10 px or 10 ppt
+        bindsym Up resize shrink height 10 px or 10 ppt
+        bindsym Right resize grow width 10 px or 10 ppt
+        
         # back to normal: Enter or Escape
         bindsym Return mode "default"
         bindsym Escape mode "default"
 }
 bindsym $mod+r mode "resize"
-
-set $bg-color 	         #2f343f
-set $inactive-bg-color   #2f343f
-set $text-color          #f3f4f5
-set $inactive-text-color #676E7D
-set $urgent-bg-color     #E53935
 
 # window colors
 #                       border              background         text                 indicator
@@ -124,9 +118,9 @@ hide_edge_borders both
 bindsym $mod+Shift+p exec --no-startup-id i3lock -i ~/.config/i3/wall 
 
 # volume controls
-bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +2%
-bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -2%
-bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle
+bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +2%
+bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -2%
+bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle
 
 # media player controls
 bindsym XF86AudioPlay exec playerctl play
@@ -140,7 +134,7 @@ exec_always --no-startup-id feh --bg-scale ~/.config/i3/wall
 exec --no-startup-id mailspring -b
 exec --no-startup-id nm-applet
 exec --no-startup-id picom --backend glx --vsync -bf
-exec --no-startup-id redshift -l 51.150069:-114.245256 
+exec --no-startup-id redshift -l 51.150069:-114.245256 -t 6500K:4000K
 
 # laptop specific configuration
 #exec --no-startup-id syndaemon -K -i 0.2 -R -d 

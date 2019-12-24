@@ -1,7 +1,7 @@
 # Dotfiles
 ## i3-gaps 
 - install Roboto fonts
-- install xfce4-notifyd
+- install `xfce4-notifyd`
 - install programs detailed in `~/.config/i3/config` exec section
 - make `~/.config/polybar/launch.sh` executable
 - edit pulseaudio sinks in i3 config if necessary (`pactl list short sinks`)
