@@ -55,9 +55,9 @@ set title
 set wildmenu
 
 " allow undo/redo even after closing flie
-set undofile
-set undolevels=500
-set undoreload=500
+"set undofile
+"set undolevels=500
+"set undoreload=500
 
 " set backup and undo directories
 set backupdir=~/.vim/tmp/backups//
