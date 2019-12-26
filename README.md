@@ -17,6 +17,3 @@ My personal Linux dotfiles.
 - install `zsh-syntax-highlighting`
   - see output path after installation and update `.zshrc` if necessary
 
-## vim
-- install [vim-plug](https://github.com/junegunn/vim-plug)
-  - use `:PlugInstall` to install plugins
