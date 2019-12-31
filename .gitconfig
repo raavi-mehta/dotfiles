@@ -1,0 +1,13 @@
+[user]
+    name = Raavi Mehta
+    email = 19811577+raavi-mehta@users.noreply.github.com 
+    username = raavi-mehta
+
+[core]
+    editor = nvim
+
+[web]
+    browser = google-chrome
+
+[credential]
+    helper = libsecret

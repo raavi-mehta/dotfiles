@@ -3,6 +3,7 @@ echo "Installing programs using yay..."
 yay -S \
     i3-gaps \
     zsh \
+    gnome-keyring \
     ttf-dejavu \
     ttf-liberation \
     ttf-roboto \

@@ -1,11 +1,11 @@
 # Dotfiles
 My personal Linux dotfiles. Used for Arch Linux based distributions, but may
-be ammended for other distributions.
+be amended for other distributions.
 
 ## Installation
 Clone this repository into your home directory and run `./install.sh`. Manual
 installation detailed below.
-Note: `install.sh` requires the `yay` AUR Helper.
+Note: `install.sh` requires the [yay](https://github.com/Jguer/yay) AUR Helper.
 
 ### i3-gaps 
 - install basic fonts (`ttf-dejavu`, `ttf-liberation`, `noto-fonts`) 
