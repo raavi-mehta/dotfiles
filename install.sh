@@ -7,6 +7,7 @@ yay -S \
     ttf-liberation \
     ttf-roboto \
     ttf-roboto-mono \
+    noto-fonts \
     noto-fonts-cjk \
     noto-fonts-emoji \
     powerline-fonts-git \
@@ -15,6 +16,7 @@ yay -S \
     light-locker \
     playerctl \
     polybar \
+    polybar-spotify-git \
     feh \
     network-manager-applet \
     picom \
