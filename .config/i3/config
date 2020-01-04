@@ -115,7 +115,7 @@ client.urgent           $urgent-bg-color    $urgent-bg-color   $text-color      
 hide_edge_borders both
 
 # screen locker
-bindsym $mod+Shift+l exec --no-startup-id light-locker-command -l 
+bindsym $mod+l exec --no-startup-id light-locker-command -l 
 
 # volume controls
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +2%
