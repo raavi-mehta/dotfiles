@@ -1,0 +1,17 @@
+# Halloy config.
+#
+# For a complete list of available options,
+# please visit https://halloy.chat/configuration/
+
+[servers.liberachat]
+nickname = "halloy7557"
+server = "irc.libera.chat"
+channels = ["#halloy"]
+
+[servers.irchighway]
+nickname = "halloy7557"
+server = "irc.irchighway.net"
+channels = ["#ebooks"]
+use_tls = true
+dangerously_accept_invalid_certs = true
+# port = 6697
